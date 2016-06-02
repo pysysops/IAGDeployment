@@ -1,7 +1,7 @@
 version: '2'
 services:
   api:
-    image: devquay.stockport.gov.uk:5000/stockportcontentapi
+    image: devquay.stockport.gov.uk:5000/stockportcontentapi:${API_TAG}
     ports:
       - 8080:5001
     environment:
