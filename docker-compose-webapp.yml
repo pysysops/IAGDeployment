@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: devquay.stockport.gov.uk:5000/stockportwebapp:${WEBAPP_TAG}
+    image: ${REGISTRY_URL}/stockportwebapp:${TAG}
     ports:
       - 80:5000
     environment:
