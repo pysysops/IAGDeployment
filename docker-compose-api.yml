@@ -1,0 +1,13 @@
+version: '2'
+services:
+  api:
+    image: devquay.stockport.gov.uk:5000/stockportcontentapi
+    ports:
+      - 8080:5001
+    environment:
+      - http_proxy
+      - https_proxy
+      - no_proxy
+      - VIRTUAL_HOST=*.dbdtest.stockport.gov.uk,content
+      - CONTENTFUL_KEY
+      - CONTENTFUL_SPACE
