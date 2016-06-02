@@ -1,7 +1,7 @@
 
 pull:
 	docker rmi $(docker images -q --filter dangling=true) ; \
-	TAG=$(TAG) docker-compose -f docker-compose-$(APP).yml pull --ignore-pull-failures
+	docker pull $(REGISTRY_URL)/$(IMAGE):$(TAG)
 
 tag:
 	docker tag $(IMAGE) $(REGISTRY_URL)/$(IMAGE):$(GO_PIPELINE_LABEL)
