@@ -1,6 +1,6 @@
 
 pull:
-	docker rmi $(docker images -q --filter dangling=true)
+	docker rmi $(docker images -q --filter dangling=true) ; \
 	TAG=$(TAG) docker-compose -f docker-compose-$(APP).yml pull --ignore-pull-failures
 
 tag:
