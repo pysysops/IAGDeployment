@@ -9,5 +9,7 @@ services:
       - https_proxy
       - no_proxy
       - VIRTUAL_HOST=*.dbdtest.stockport.gov.uk,content
-      - CONTENTFUL_KEY
-      - CONTENTFUL_SPACE
+      - HEALTHY_STOCKPORT_ACCESS_KEY
+      - HEALTHY_STOCKPORT_SPACE
+      - STOCKPORT_GOV_ACCESS_KEY
+      - STOCKPORT_GOV_SPACE
