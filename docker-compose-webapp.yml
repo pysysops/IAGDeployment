@@ -7,5 +7,6 @@ services:
     environment:
       - VIRTUAL_HOST=*.dbdtest.stockport.gov.uk,content
       - BUSINESS_ID
+      - AUTH_PASSWORD
     external_links:
       - app_api_1:content
