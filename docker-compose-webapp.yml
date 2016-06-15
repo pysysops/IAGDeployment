@@ -2,11 +2,9 @@ version: '2'
 services:
   web:
     image: ${REGISTRY_URL}/stockportwebapp:${TAG}
-    ports:
-      - 80:5000
     environment:
-      - VIRTUAL_HOST=*.dbdtest.stockport.gov.uk,content
+      - VIRTUAL_HOST=*.healthystockport.co.uk
       - BUSINESS_ID
       - AUTH_PASSWORD
-    external_links:
-      - app_api_1:content
+    links:
+      - content

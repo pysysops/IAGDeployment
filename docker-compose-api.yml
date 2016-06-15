@@ -2,13 +2,13 @@ version: '2'
 services:
   api:
     image: ${REGISTRY_URL}/stockportcontentapi:${TAG}
+    container_name: content
     ports:
       - 8080:5001
     environment:
       - http_proxy
       - https_proxy
       - no_proxy
-      - VIRTUAL_HOST=*.dbdtest.stockport.gov.uk,content
       - HEALTHY_STOCKPORT_ACCESS_KEY
       - HEALTHY_STOCKPORT_SPACE
       - STOCKPORT_GOV_ACCESS_KEY
