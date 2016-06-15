@@ -3,7 +3,7 @@ services:
   web:
     image: ${REGISTRY_URL}/stockportwebapp:${TAG}
     environment:
-      - VIRTUAL_HOST=*.healthystockport.co.uk
+      - VIRTUAL_HOST
       - BUSINESS_ID
       - AUTH_PASSWORD
     links:
