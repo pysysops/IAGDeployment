@@ -6,5 +6,5 @@ services:
       - VIRTUAL_HOST
       - BUSINESS_ID
       - AUTH_PASSWORD
-    links:
+    external_links:
       - content
